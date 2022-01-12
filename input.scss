@@ -1,0 +1,335 @@
+//
+//
+// Terminal Command --->  sudo sass --watch input.scss:output.css  <--- Compiles SCSS on save
+//
+//
+
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+// SCSS Variables ------------------------------------------------------------------------------------------------------
+$outerContainerWidth: auto;
+$outerContainerHeight: 100vh;
+$innerContainerWidth: 85%;
+$innerContainerHeight: 80%;
+$h2FontSize: 40px;
+
+// Colors
+$orange: #DB8224;
+$green: #24DB82;
+$purple: #8224DB;
+
+// Mixins
+@mixin outerTheme($outerContainerHeight, $outerContainerWidth)
+{
+  height: $outerContainerHeight;
+  width: $outerContainerWidth;
+  scroll-snap-align: center;
+  display: grid;
+  place-items: center;
+  margin: 10vh auto;
+  background-color: #606060;
+  border: solid black 3px;
+  //border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+@mixin innerTheme($innerContainerHeight, $innerContainerWidth)
+{
+  height: $innerContainerHeight;
+  width: $innerContainerWidth;
+  display: grid;
+  align-items: center;
+  background-image: url(pics/papyrus.png);
+  justify-content: center;
+  border: solid black 3px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+// Outer Margin Containers & Scrollbars---------------------------------------------------------------------------------
+html {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+
+}
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #606060;
+  background-image: url(pics/papyrus.png);
+  //overflow-x: hidden; // Hides X Scrollbar
+
+}
+//.wrapper
+//{
+//  margin: 0 auto;
+//}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+// Header Widget Components --------------------------------------------------------------------------------------------
+
+#head
+{
+  scroll-snap-align: start;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+
+  .bar
+  {
+    height: 100vh;
+    width: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 29vh 29vh 21vh 21vh;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-image: linear-gradient(#606060, black);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+
+    .backdrop
+    {
+      background-color: black;
+      background-image: url(pics/morningPanoramaOptimized.png);
+      background-size: cover;
+      background-position: bottom;
+      //margin: 0 auto 50vh;
+      //width: 99.5%;
+      //height: 60vh;
+      //width: auto;
+      //height: auto;
+      grid-column: 1 / span 5;
+      grid-row: 1 / span 2;
+      align-self: stretch;
+      border-bottom: solid black 5px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+
+
+  .circle1
+  {
+    //position: absolute;
+    align-self: center;
+    justify-self: center;
+    grid-column: 3;
+    grid-row-end: 3;
+    background-image: linear-gradient(#606060, black);
+    background-size: cover;
+    width: 27em;
+    height: 27em;
+    border: solid black 3px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+    .circle2
+    {
+      position: relative;
+      background-color: white;
+      background-image: linear-gradient(to bottom right, rgba(242, 208, 206, 0.2), rgba(21, 78, 125, 0.7)), url(pics/me.jpeg);
+      background-size: cover;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 25em;
+      height: 25em;
+      border: solid black 2px;
+      border-radius: 100%;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .fa {
+
+    padding: 20px;
+    font-size: 30px;
+    height: .75em;
+    width: .75em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 100%;
+    border: solid black 5px;
+  }
+
+  .fa-facebook {
+    grid-column: 3;
+    grid-row: 3;
+    align-self: end;
+    justify-self: center;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .1)), url(pics/goldMarble.png);
+    background-size: cover;
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+  }
+
+    .about
+    {
+      margin: 0;
+      font-size: $h2FontSize;
+      font-family: "Finger Paint", sans-serif;
+      color: white;
+      grid-column: 1;
+      grid-row: 3;
+      align-self: start;
+      justify-self: center;
+      transition: .75s;
+    }
+  .about:hover
+  {
+    text-shadow: -8px 12px 5px black;
+    font-size: 45px;
+    margin-top: -10px;
+  }
+    .portfolio
+    {
+      margin: 0;
+      font-size: $h2FontSize;
+      font-family: "Finger Paint", sans-serif;
+      color: white;
+      grid-column: 2;
+      grid-row: 3;
+      align-self: start;
+      justify-self: center;
+      transition: .75s;
+    }
+  .portfolio:hover
+  {
+    text-shadow: -5px 12px 5px black;
+    font-size: 45px;
+    margin-top: -10px;
+  }
+    .code
+    {
+      margin: 0;
+      font-size: $h2FontSize;
+      font-family: "Finger Paint", sans-serif;
+      color: white;
+      grid-column: 4;
+      grid-row: 3;
+      align-self: start;
+      justify-self: center;
+      transition: .75s;
+    }
+  .code:hover
+  {
+    text-shadow: 5px 12px 5px black;
+    font-size: 45px;
+    margin-top: -10px;
+  }
+    .contact
+    {
+      margin: 0;
+      font-size: $h2FontSize;
+      font-family: "Finger Paint", sans-serif;
+      color: white;
+      grid-column: 5;
+      grid-row: 3;
+      align-self: start;
+      justify-self: center;
+      transition: .75s;
+    }
+  .contact:hover
+  {
+    text-shadow: 8px 12px 5px black;
+    font-size: 45px;
+    margin-top: -10px;
+  }
+}
+
+
+
+// Body Grid Sections --------------------------------------------------------------------------------------------------
+#sec1, #sec2, #sec3, #sec4
+{
+  @include outerTheme($outerContainerHeight, $outerContainerWidth);
+}
+
+
+#sec1
+{
+  background-image: linear-gradient(to bottom, rgba(242, 208, 206, 0.3), rgba(21, 78, 125, 0.3)), url(pics/vector1.png);
+  background-size: cover;
+
+  .inner1
+  {
+    @include innerTheme($innerContainerHeight, $innerContainerWidth);
+  }
+}
+
+
+#sec2
+{
+  background-image: linear-gradient(to bottom, rgba(242, 208, 206, 0.3), rgba(21, 78, 125, 0.3)), url(pics/vector2.png);
+  background-size: cover;
+
+  .inner2
+  {
+    @include innerTheme($innerContainerHeight, $innerContainerWidth);
+  }
+}
+
+
+#sec3
+{
+  background-image: linear-gradient(to bottom, rgba(242, 208, 206, 0.3), rgba(21, 78, 125, 0.3)), url(pics/vector3.png);
+  background-size: cover;
+
+  .inner3
+  {
+    @include innerTheme($innerContainerHeight, $innerContainerWidth);
+  }
+}
+
+
+#sec4
+{
+  background-image: linear-gradient(to bottom, rgba(242, 208, 206, 0.3), rgba(21, 78, 125, 0.3)), url(pics/vector1.png);
+  background-size: cover;
+
+  .inner4
+  {
+    @include innerTheme($innerContainerHeight, $innerContainerWidth);
+  }
+}
+
+
+footer {
+  width: auto;
+  height: 20vh;
+  margin: 0 auto;
+  background-image: linear-gradient(#606060, black);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  border-top: solid black 3px;
+
+  h2 {
+    text-align: center;
+    background: -webkit-linear-gradient(rgba(242, 208, 206, 1), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+
+
+
+
