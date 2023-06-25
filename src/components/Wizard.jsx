@@ -16,11 +16,11 @@ function Wizard() {
   }, []);
 
   return (
-    <section id="wizard" className="z-10 bg-black sticky left-0 top-0 w-screen h-screen">
+    <section id="wizard" className="z-10 bg-secondary-200 sticky left-0 top-0 w-screen h-screen">
       {isLoading ? (
         <div className="flex justify-center items-center w-full h-full">
           <TailSpin color="#FFFFFF" height={115} width={115} />
-          <h2 className="z-20 absolute text-gray-100 items-bottom">Out for lunch</h2>
+          <h2 className="z-20 absolute text-gray-100 items-bottom">Pardon Our Dust</h2>
         </div>
       ) : (
         /* Spline component */

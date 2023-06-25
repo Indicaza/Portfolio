@@ -1,6 +1,6 @@
 // App.js
 import React from "react";
-// import "./index.css";
+import "./index.css";
 import "./output.css";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
@@ -15,8 +15,8 @@ function App() {
 		<div>
 			<Navbar />
 			<LandingPage />
-			{/* <Wizard /> */}
-			{/* <PortfolioSection /> */}
+			<Wizard />
+			<PortfolioSection />
 			<AboutSection />
 			<ContactSection />
 			<Footer />

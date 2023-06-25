@@ -3,11 +3,11 @@ import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="z-20 relative bg-gray-800 text-white py-6 w-screen">
+    <footer id="footer" className="z-20 relative bg-secondary text-primary py-6 w-screen">
       <div className="container mx-auto px-4 flex justify-center items-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-2">Footer</h2>
-          <p className="text-gray-400">
+          <p className="text-primary">
             This is the footer content. Replace this with your own text.
           </p>
           <div className="mt-4 flex justify-center space-x-4">

@@ -5,15 +5,15 @@ function LandingPage() {
 	return (
 		<section
 			id="landing"
-			className="absolute z-0 h-screen w-screen bg-green-900 opacity-25"
+			className="relative z-0 h-screen w-screen bg-accent1 flex justify-center items-center"
 		>
 			<div className="relative z-20">
 				<div className="flex h-screen items-center justify-center">
 					<div className="text-center">
-						<h1 className="items-bottom absolute text-gray-100">
+						<h1 className="items-bottom absolute text-secondary">
 							Landing Page
 						</h1>
-						<p className="text-gray-400">
+						<p className="text-secondary">
 							This is the landing page content. Replace this with your own text.
 						</p>
 					</div>
