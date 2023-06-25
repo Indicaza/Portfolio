@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.d0769d97.css",
+    "main.css": "/Portfolio/static/css/main.d41b39ec.css",
     "main.js": "/Portfolio/static/js/main.3973051f.js",
     "static/js/872.a5c51fdc.chunk.js": "/Portfolio/static/js/872.a5c51fdc.chunk.js",
     "static/js/227.afd5f0af.chunk.js": "/Portfolio/static/js/227.afd5f0af.chunk.js",
@@ -12,7 +12,7 @@
     "static/media/hacker-found-solution.gif": "/Portfolio/static/media/hacker-found-solution.9efde67a59b10055e0bc.gif",
     "static/media/oneRing.png": "/Portfolio/static/media/oneRing.b8838646ee285d79652b.png",
     "index.html": "/Portfolio/index.html",
-    "main.d0769d97.css.map": "/Portfolio/static/css/main.d0769d97.css.map",
+    "main.d41b39ec.css.map": "/Portfolio/static/css/main.d41b39ec.css.map",
     "main.3973051f.js.map": "/Portfolio/static/js/main.3973051f.js.map",
     "872.a5c51fdc.chunk.js.map": "/Portfolio/static/js/872.a5c51fdc.chunk.js.map",
     "227.afd5f0af.chunk.js.map": "/Portfolio/static/js/227.afd5f0af.chunk.js.map",
@@ -22,7 +22,7 @@
     "496.845f8cdc.chunk.js.map": "/Portfolio/static/js/496.845f8cdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0769d97.css",
+    "static/css/main.d41b39ec.css",
     "static/js/main.3973051f.js"
   ]
 }
