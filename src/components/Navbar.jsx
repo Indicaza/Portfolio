@@ -30,13 +30,13 @@ function Navbar() {
 	return (
 		<nav
 			className={`fixed left-0 top-0 z-20 transform bg-gradient-to-b from-secondary to-secondary-500 shadow-2xl transition-all duration-300 w-screen ${
-				isTop || isBottom ? "scale-105" : ""
+				isTop || isBottom ? "scale-110" : ""
 			}`}
 		>
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				<div className="flex h-16 items-center justify-between">
 					<div
-						className={`flex items-center transition-all duration-300 ${
+						className={`flex items-center transition-all duration-800 ${
 							isTop || isBottom ? "scale-105" : ""
 						}`}
 					>
