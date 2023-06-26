@@ -55,7 +55,7 @@ function Navbar() {
 				<div className="flex h-16 items-center justify-between">
 					<div
 						className={`duration-800 flex items-center transition-all ${
-							isTop || isBottom ? "scale-105" : ""
+							isTop || isBottom ? "scale-120" : ""
 						}`}
 					>
 						<span className="text-lg font-bold text-primary">Logo</span>
@@ -66,7 +66,7 @@ function Navbar() {
 							onClick={(event) => handleSmoothScroll(event, "#landing")}
 							className={`${
 								isSectionActive("landing") ? "gradient-border" : ""
-							} rounded-md px-3 py-2 text-sm font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary hover:backdrop-blur-2xl`}
+							} rounded-md px-3 py-2 text-sm font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
 							onMouseEnter={() => handleSectionEnter("landing")}
 							onMouseLeave={handleSectionLeave}
 						>
@@ -77,7 +77,7 @@ function Navbar() {
 							onClick={(event) => handleSmoothScroll(event, "#portfolio")}
 							className={`${
 								isSectionActive("portfolio") ? "gradient-border" : ""
-							} rounded-md px-3 py-2 text-sm font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-200`}
+							} rounded-md px-3 py-2 text-sm font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
 							onMouseEnter={() => handleSectionEnter("portfolio")}
 							onMouseLeave={handleSectionLeave}
 						>
@@ -88,7 +88,7 @@ function Navbar() {
 							onClick={(event) => handleSmoothScroll(event, "#about")}
 							className={`${
 								isSectionActive("about") ? "gradient-border" : ""
-							} rounded-md px-3 py-2 text-sm font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-300`}
+							} rounded-md px-3 py-2 text-sm font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
 							onMouseEnter={() => handleSectionEnter("about")}
 							onMouseLeave={handleSectionLeave}
 						>
