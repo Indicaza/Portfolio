@@ -6,39 +6,40 @@ function LandingPage() {
 	return (
 		<section
 			id="landing"
-			className="z-0 flex h-screen w-screen items-center justify-center bg-accent1 pb-60"
+			className="pb-30 z-0 h-screen w-screen bg-accent1"
 		>
-			<div className="flex h-1/2 w-1/2 items-center justify-center bg-red-700">
-				<div className="relative">
-					<img
-						className=" rounded-full"
-						src={hacker}
-						alt="Hackerman"
-					/>
-					<img
-						className="animate-spin-slow absolute left-0 top-0 mx-auto block"
-						src={oneRing}
-						alt="One Ring to Rule Them All, One Ring to Find Them, One Ring to Bring Them All and in the Darkness Bind Them."
-					/>
+			<div className="flex h-full items-center justify-center">
+				<div className="flex h-1/2 w-1/2 items-center justify-center">
+					<div className="">
+						<img
+							className="mx-auto w-1/2 rounded-full"
+							src={hacker}
+							alt="Hackerman"
+						/>
+					</div>
+					<div className="absolute">
+						<img
+							className="animate-spin-slow mx-auto w-1/2"
+							src={oneRing}
+							alt="One Ring to Rule Them All, One Ring to Find Them, One Ring to Bring Them All and in the Darkness Bind Them."
+						/>
+					</div>
+				</div>
+
+				<div className="absolute mt-60 flex w-full justify-center pt-60">
+					<div className="">
+						<img
+							alt="GitHub Stats"
+							src="https://github-readme-streak-stats.herokuapp.com/?user=Indicaza&theme=darcula&hide_border=true"
+							className=""
+						/>
+					</div>
 				</div>
 			</div>
-
-			{/* Added Component */}
-			{/* Updated Component */}
-			<div className="absolute bottom-0 z-50 flex w-full items-center justify-center pb-20">
-				<div className="text-center">
-					<img
-						alt="GitHub Stats"
-						src="https://github-readme-streak-stats.herokuapp.com/?user=Indicaza&theme=darcula&hide_border=true"
-						className="mx-auto"
-					/>
-				</div>
-			</div>
-
 			<style>
 				{`
           @keyframes spin {
-            0% { transform: rotate(0deg); }
+             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
           }
 
