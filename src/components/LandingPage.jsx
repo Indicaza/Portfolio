@@ -6,12 +6,12 @@ function LandingPage() {
 	return (
 		<section
 			id="landing"
-			className="relative z-0 flex h-screen w-screen items-center justify-center bg-accent1 pb-60"
+			className="z-0 flex h-screen w-screen items-center justify-center bg-accent1 pb-60"
 		>
-			<div className="relative z-20">
-				<div className="scale-250 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+			<div className="flex h-1/2 w-1/2 items-center justify-center bg-red-700">
+				<div className="relative">
 					<img
-						className="scale-85 rounded-full"
+						className=" rounded-full"
 						src={hacker}
 						alt="Hackerman"
 					/>
@@ -21,24 +21,16 @@ function LandingPage() {
 						alt="One Ring to Rule Them All, One Ring to Find Them, One Ring to Bring Them All and in the Darkness Bind Them."
 					/>
 				</div>
-				<div className="flex h-screen items-center justify-center">
-					<div className="text-center">
-						<h1 className="items-bottom absolute text-secondary">
-							Where am I?
-						</h1>
-						<p className="text-secondary">This text is not aligned properly!</p>
-					</div>
-				</div>
 			</div>
 
 			{/* Added Component */}
 			{/* Updated Component */}
-			<div className="scale-175 absolute bottom-0 z-20 flex w-full items-center justify-center pb-20">
+			<div className="absolute bottom-0 z-50 flex w-full items-center justify-center pb-20">
 				<div className="text-center">
 					<img
 						alt="GitHub Stats"
 						src="https://github-readme-streak-stats.herokuapp.com/?user=Indicaza&theme=darcula&hide_border=true"
-						className="mx-auto h-auto w-2/3"
+						className="mx-auto"
 					/>
 				</div>
 			</div>

@@ -21,10 +21,8 @@ const Footer = () => {
 					id="footerInfo"
 					className="ml-6 w-1/2 text-center"
 				>
-					<h2 className="mb-2 text-2xl font-bold"></h2>
-					<p className="text-primary">
-						This is the footer content. Replace this with your own text.
-					</p>
+					<h2 className="mb-2 text-2xl font-bold">See Ya!</h2>
+					<p className="text-primary">Space Cowboy...</p>
 					<div className="mt-4 flex justify-center space-x-4">
 						<a
 							href="https://www.linkedin.com/in/zach-reitmeier-b52922162/"
