@@ -47,7 +47,7 @@ function Navbar() {
 
 	return (
 		<nav
-			className={`fixed left-0 top-0 z-20 w-screen transform bg-gradient-to-b from-secondary to-secondary-500 shadow-2xl transition-all duration-300 ${
+			className={`fixed left-0 top-0 z-20 w-screen transform bg-secondary shadow-2xl transition-all duration-300 ${
 				isTop || isBottom ? "scale-110" : ""
 			}`}
 		>
@@ -66,7 +66,7 @@ function Navbar() {
 							onClick={(event) => handleSmoothScroll(event, "#landing")}
 							className={`${
 								isSectionActive("landing") ? "gradient-border" : ""
-							} rounded-md px-3 py-2 text-sm font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
+							} text-sm rounded-md px-3 py-2 font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
 							onMouseEnter={() => handleSectionEnter("landing")}
 							onMouseLeave={handleSectionLeave}
 						>
@@ -77,7 +77,7 @@ function Navbar() {
 							onClick={(event) => handleSmoothScroll(event, "#portfolio")}
 							className={`${
 								isSectionActive("portfolio") ? "gradient-border" : ""
-							} rounded-md px-3 py-2 text-sm font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
+							} text-sm rounded-md px-3 py-2 font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
 							onMouseEnter={() => handleSectionEnter("portfolio")}
 							onMouseLeave={handleSectionLeave}
 						>
@@ -88,7 +88,7 @@ function Navbar() {
 							onClick={(event) => handleSmoothScroll(event, "#about")}
 							className={`${
 								isSectionActive("about") ? "gradient-border" : ""
-							} rounded-md px-3 py-2 text-sm font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
+							} text-sm rounded-md px-3 py-2 font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
 							onMouseEnter={() => handleSectionEnter("about")}
 							onMouseLeave={handleSectionLeave}
 						>
@@ -99,7 +99,7 @@ function Navbar() {
 							onClick={(event) => handleSmoothScroll(event, "#footer")}
 							className={`${
 								isSectionActive("footer") ? "gradient-border" : ""
-							} rounded-md px-3 py-2 text-sm font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
+							} text-sm rounded-md px-3 py-2 font-medium text-primary drop-shadow-2xl transition duration-300 ease-in-out hover:bg-accent1 hover:text-secondary-400`}
 							onMouseEnter={() => handleSectionEnter("footer")}
 							onMouseLeave={handleSectionLeave}
 						>

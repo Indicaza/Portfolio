@@ -6,6 +6,8 @@
 	"dependencies": {
 		"@craco/craco": "^7.1.0",
 		"@splinetool/react-spline": "^2.2.6",
+		"@tailwindcss/forms": "^0.5.4",
+		"@tailwindcss/typography": "^0.5.9",
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^14.0.0",
 		"@testing-library/user-event": "^14.4.3",
@@ -46,6 +48,7 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.14",
+		"daisyui": "^3.1.7",
 		"postcss": "^8.4.24",
 		"prettier": "^2.8.8",
 		"prettier-plugin-tailwindcss": "^0.3.0",

@@ -19,13 +19,13 @@ function Wizard() {
 	return (
 		<section
 			id="wizard"
-			className="sticky left-0 top-0 z-10 h-screen w-screen bg-secondary-200"
+			className="sticky left-0 top-0 z-10 h-screen w-screen bg-secondary-500"
 		>
 			{!isWizardLoaded ? (
 				<div className="relative flex h-full w-full items-center justify-center">
 					<button
 						onClick={handleButtonClick}
-						className="z-20 rounded bg-primary px-4 py-2 text-white"
+						className="btn-accent btn-outline btn"
 					>
 						Load Wizard
 					</button>
