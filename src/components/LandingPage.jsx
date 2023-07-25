@@ -5,8 +5,8 @@ import oneRing from "../assets/oneRing.png";
 function LandingPage() {
 	return (
 		<section
-			id="landing"
-			className="pb-30 z-0 h-screen w-screen bg-accent1"
+			id="home"
+			className="pb-30 -py-96 z-0 h-screen w-screen bg-accent1"
 		>
 			<div className="flex h-full items-center justify-center">
 				<div className="flex items-center justify-center">

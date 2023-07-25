@@ -32,15 +32,15 @@ module.exports = {
 				},
 			},
 			fontFamily: {
-				kefa: "Kefa",
+				kefa: "kefa",
+				bell: ["Bellefair", "serif"],
+				eagle: ["Eagle Lake", "cursive"],
 			},
 			borderRadius: {
 				"3xs": "10px",
 				"31xl": "50px",
 			},
 		},
-		fontSize: {},
-
 		backgroundImage: {
 			"hero-pattern": "url('/img/hero-pattern.svg')",
 			"footer-texture": "url('/img/footer-texture.png')",

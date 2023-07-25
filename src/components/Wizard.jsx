@@ -19,7 +19,7 @@ function Wizard() {
 	return (
 		<section
 			id="wizard"
-			className="sticky left-0 top-0 z-10 h-screen w-screen bg-secondary-500"
+			className="z-15 sticky left-0 top-0 h-screen w-screen bg-secondary-500"
 		>
 			{!isWizardLoaded ? (
 				<div className="relative flex h-full w-full items-center justify-center">
